@@ -1,25 +1,40 @@
-# Receipt Scanner
+# 📸 Receipt Scanner
 
-A project to scan and process receipts using OCR (Optical Character Recognition) technology.
+A simple project that uses OCR (Optical Character Recognition) powered by Gemini AI to scan and extract structured data from receipt images.
 
-## Features
+## ✨ Features
 
--   Extract text from receipt images.
--   Parse and structure receipt data.
--   Export processed data for further use.
+-   Extracts text from receipt images using Gemini API.
+-   Parses and structures receipt data (e.g., items, prices, store name, date).
+-   Outputs clean, ready-to-use JSON for further processing or export.
 
-## Installation
+## 🚀 Installation
 
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/your-username/receipt-scanner.git
-    ```
-2. Install dependencies:
-    ```bash
-    npm install
-    ```
+Clone the repository:
 
-## Usage
+```
+git clone https://github.com/your-username/receipt-scanner.git
+cd receipt-scanner
+```
 
-1. Add receipt images
-2. Run the program with `node gemini.js`
+Install dependencies:
+
+```
+npm install
+```
+
+## 📦 Usage
+
+Add your receipt image(s) to the project directory (e.g., receipt.jpg).
+
+Create a .env file in the root directory and add your Gemini API key:
+
+```
+GOOGLE_API_KEY=your-gemini-api-key
+```
+
+Run the script:
+
+```bash
+node gemini.js
+```
